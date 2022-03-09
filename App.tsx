@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text} from 'react-native';
+import Hamburger from './src/Components/Hamburger/hamburger';
 
 const App: React.FC = () => {
-  return <Text>Hello World</Text>;
+  return <Hamburger />;
 };
 export default App;
