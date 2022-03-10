@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import Avatar from '../../Components/Avatar/avatar';
 import HeaderText from '../../Components/HeaderText/header_text';
+import {NavigationElements} from '../../Utils/sidebar_navigation_elements';
 import {COLORS} from '../../Utils/styles/colors.styles';
 import {AdvancedLevels} from '../../Utils/types/global.types';
 import {SidebarStyles} from './sidebar.styles';
@@ -26,6 +27,16 @@ const Sidebar: React.FC = () => {
             {AdvancedLevels.BEGINNER}
           </Text>
         </View>
+      </View>
+
+      <View>
+        {NavigationElements.map(navigationElement => {
+          return (
+            <View key={navigationElement.title}>
+              <Text>{navigationElement.title}</Text>
+            </View>
+          );
+        })}
       </View>
     </View>
   );
