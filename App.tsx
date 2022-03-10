@@ -1,7 +1,9 @@
 import React from 'react';
-import Hamburger from './src/Components/Hamburger/hamburger';
+import {LogBox} from 'react-native';
+import Sidebar from './src/Pages/Sidebar/sidebar';
 
 const App: React.FC = () => {
-  return <Hamburger />;
+  LogBox.ignoreAllLogs();
+  return <Sidebar />;
 };
 export default App;

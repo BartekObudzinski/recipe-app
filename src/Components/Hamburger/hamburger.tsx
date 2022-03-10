@@ -1,10 +1,10 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 import HamburgerLine from '../HamburgerLine/hamburger-line';
-import {style} from './hamburger.styles';
+import {HamburgerStyles} from './hamburger.styles';
 
 const Hamburger: React.FC = () => {
-  const {container} = style;
+  const {container} = HamburgerStyles;
   return (
     <View style={container}>
       <HamburgerLine />

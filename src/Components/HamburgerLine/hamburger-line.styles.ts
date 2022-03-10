@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { COLORS } from "../../Utils/colors.style";
 
-export const styles = StyleSheet.create({
+export const HamburgerLineStyles = StyleSheet.create({
     content: {
         width: '100%',
         height: 3,

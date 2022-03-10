@@ -1,4 +1,4 @@
 export const COLORS = {
-    PINK: 'pink',
-    GREY: '#696969'
+    GREY: '#696969',
+    LIMON: '#80ac9c'
 }
