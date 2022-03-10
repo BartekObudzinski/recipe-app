@@ -1,12 +1,32 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import Avatar from '../../Components/Avatar/avatar';
+import HeaderText from '../../Components/HeaderText/header_text';
+import {COLORS} from '../../Utils/styles/colors.styles';
+import {AdvancedLevels} from '../../Utils/types/global.types';
 import {SidebarStyles} from './sidebar.styles';
 
 const Sidebar: React.FC = () => {
-  const {wrapper} = SidebarStyles;
+  const {
+    wrapper,
+    headerContainer,
+    userInformationContainer,
+    headerUsernameTextColor,
+    headerAdvancedLevelTextColor,
+  } = SidebarStyles;
   return (
     <View style={wrapper}>
-      <Text> tmp</Text>
+      <View style={headerContainer}>
+        <Avatar />
+        <View style={userInformationContainer}>
+          <HeaderText style={headerUsernameTextColor} level={3}>
+            Username
+          </HeaderText>
+          <Text style={headerAdvancedLevelTextColor}>
+            {AdvancedLevels.BEGINNER}
+          </Text>
+        </View>
+      </View>
     </View>
   );
 };

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS } from "../../Utils/colors.style";
+import { COLORS } from "../../Utils/styles/colors.styles";
 
 export const HamburgerLineStyles = StyleSheet.create({
     content: {
