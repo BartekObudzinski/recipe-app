@@ -1,31 +1,45 @@
+import { ImageSourcePropType } from "react-native"
+
+
 type NavigationElementsType = {
+    id:number,
     title: string,
-    image: string,
+    image: ImageSourcePropType,
     path: string,
 }[]
 
-export const NavigationElements:NavigationElementsType = [{
-    title: 'Menu',
-    image: '',
-    path:''
-}, {
-    title: 'Profile',
-    image: '',
-    path:''
-    },
+
+export const NavigationElements: NavigationElementsType = [
     {
-        title: 'Nearby me',
-        image: '',
+        id: 1,
+        title: 'Home',
+        image: require(
+            '../Assets/Images/home-icon.png'
+        ),
         path:''
     },
     {
-        title: 'Favorites',
-        image: '',
+        id:2,
+        title: 'Flashcards',
+        image: require(
+            '../Assets/Images/flashcards.png'
+        ),
         path:''
     },
     {
-        title: 'Notifications',
-        image: '',
+        id:3,
+        title: 'Settings',
+        image: require(
+            '../Assets/Images/settings.png'
+        ),
         path:''
-    }
+    },
+    {
+        id:4,
+        title: 'Logout',
+        image: require(
+            '../Assets/Images/logout.png'
+        ),
+        path:''
+    },
 ]
