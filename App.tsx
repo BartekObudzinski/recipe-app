@@ -1,3 +1,4 @@
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
@@ -12,17 +13,24 @@ export type RootStackParams = {
 
 LogBox.ignoreAllLogs();
 const App: React.FC = () => {
-  const RootStack = createNativeStackNavigator<RootStackParams>();
-
+  // const RootStack = createNativeStackNavigator<RootStackParams>();
+  // const Tab = createBottomTabNavigator();
   return (
-    <NavigationContainer>
-      <RootStack.Navigator
-        initialRouteName="Start"
-        screenOptions={{headerShown: false}}>
-        <RootStack.Screen name="Start" component={StartScreen} />
-        <RootStack.Screen name="Home" component={HomeScreen} />
-      </RootStack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   {/* <RootStack.Navigator
+    //     initialRouteName="Start"
+    //     screenOptions={{headerShown: false}}>
+    //     <RootStack.Screen name="Start" component={StartScreen} />
+    //   </RootStack.Navigator> */}
+    //   <Tab.Navigator
+    //     initialRouteName="Sidebar"
+    //     screenOptions={{headerShown: false}}>
+    //     <Tab.Screen name="Home" component={HomeScreen} />
+    //     <Tab.Screen name="Sidebar" component={StartScreen} />
+    //     {/* <RootStack.Screen name="Home" component={HomeScreen} /> */}
+    //   </Tab.Navigator>
+    // </NavigationContainer>
+    <StartScreen />
   );
 };
 export default App;
